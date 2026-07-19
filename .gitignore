@@ -1,0 +1,10 @@
+*
+!.gitignore
+!init.el
+!README.md
+!lisp/
+!lisp/**
+lisp/emacs-speech-input/
+lisp/#*#
+!snippets/
+!snippets/**

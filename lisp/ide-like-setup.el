@@ -1,4 +1,8 @@
+(use-package kotlin-mode
+  :ensure t)
+
 (use-package magit
+  :ensure t
   :bind (("C-x g" . magit-status)))
 
 (use-package diff-hl
@@ -25,6 +29,8 @@
 
 (use-package consult
   :ensure t)
+
+(global-set-key (kbd "C-S-f") 'consult-ripgrep)
 
 (use-package vertico
   :ensure t
