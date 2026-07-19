@@ -21,7 +21,7 @@
 
 (use-package dumb-jump
   :ensure t
-  :hook (scala-mode . dumb-jump-mode)
+  :hook (prog-mode . dumb-jump-mode)
   :init
   (setq dumb-jump-prefer-searcher 'rg)
   :config
