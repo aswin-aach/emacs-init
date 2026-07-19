@@ -3,6 +3,12 @@
 (scroll-bar-mode 0)
 (column-number-mode)
 (setq inhibit-startup-screen t)
+
+;; Floor size for freshly-created frames. Doesn't override geometry that
+;; activities-resume/burly explicitly restores on the initial frame — see
+;; lisp/activities-setup.el if a resumed activity still opens tiny.
+(add-to-list 'default-frame-alist '(width . 120))
+(add-to-list 'default-frame-alist '(height . 45))
 ;; Automatically add ending brackets and braces
 (electric-pair-mode 1)
 
