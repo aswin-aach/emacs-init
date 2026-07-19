@@ -52,10 +52,6 @@ git clone https://github.com/aswin-aach/emacs-init ~/.emacs.d
 
 First launch installs everything in `package-selected-packages` plus the two `package-vc-selected-packages` git-sourced packages.
 
-## Workflow
-
-Try changes locally first. When happy, push to `origin` for posterity — local always wins on conflicts; this repo mirrors the local setup, not the other way around.
-
 ## Notes
 
 - Cache/state files (backups, auto-saves, `recentf`, Projectile bookmarks, URL history) are redirected to `~/.emacs.d/cache/` — see `dap-tidying.el`.
