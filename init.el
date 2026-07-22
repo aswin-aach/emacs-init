@@ -26,7 +26,7 @@
  '(global-display-line-numbers-mode t)
  '(ispell-dictionary nil)
  '(package-selected-packages
-   '(kotlin-mode exec-path-from-shell marginalia orderless vertico consult dumb-jump activities burly grip-mode claude-code ai-code-interface flycheck-clj-kondo clj-refactor rainbow-delimiters rust-mode sly request-deferred qrencode gnu-elpa-keyring-update cider lsp-metals scala-mode helm-lsp which-key lsp-ui company yasnippet flycheck projectile lsp-java nova-theme nov elpher))
+   '(kotlin-mode exec-path-from-shell marginalia orderless vertico consult dumb-jump activities burly grip-mode claude-code ai-code-interface flycheck-clj-kondo clj-refactor rainbow-delimiters rust-mode sly request-deferred qrencode gnu-elpa-keyring-update cider lsp-metals scala-mode helm-lsp which-key lsp-ui company yasnippet flycheck projectile treemacs-projectile lsp-java nova-theme nov elpher))
  '(package-vc-selected-packages
    '((claude-code :vc-backend Git :url "https://github.com/tninja/claude-code.el")
 	 (ai-code-interface :vc-backend Git :url "https://github.com/tninja/ai-code-interface.el"))))
@@ -39,7 +39,9 @@
 
 (require 'basic-convenience)
 
-(require 'dap-tidying)
+(require 'housekeeping)
+
+(require 'dap-setup)
 
 (require 'ide-like-setup)
 
